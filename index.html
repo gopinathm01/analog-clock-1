@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog clock</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"> 
+            <div class="circle"></div>
+            <div id="hour" class="hh" ></div>
+            <div id="min"  class="mm"></div>
+            <div id="sec"  class="ss"></div>
+        </div>  
+        <div class="time">
+            <p>12</p>
+            <p>9</p>
+            <p>3</p>
+            <p>6</p>
+        </div>
+    </div>   
+
+    <script>
+        const runClock=()=>{
+            const d = new Date();
+            const h = d.getHours();
+            const m = d.getMinutes();
+            const s = d.getSeconds();  
+
+            hhhh = (h*30) + (m*6) / 12;
+            mmmm = m*6;
+            ssss = s*6;
+    
+    
+           document.querySelector(".hh").style.transform= "rotate(" + hhhh + "deg)"; 
+           document.querySelector(".mm").style.transform= "rotate(" + mmmm + "deg)";
+           document.querySelector(".ss").style.transform= "rotate(" + ssss + "deg)";
+        }
+    
+        setInterval(runClock,1000);
+    </script>
+
+</body>
+</html> 
+
+
+
+

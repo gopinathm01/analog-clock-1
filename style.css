@@ -1,0 +1,123 @@
+body 
+{
+    background-color: gainsboro; 
+    cursor: pointer;
+} 
+
+.outer
+{
+    width:400px;
+    height:400px;
+    background: gainsboro; 
+    box-shadow:10px 10px 18px grey,-10px -10px 18px white;
+   /* box-shadow:-6px -6px 8px white;*/
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10%; 
+    border-radius: 50%;
+
+} 
+
+.inner 
+{
+    width:350px;
+    height:350px; 
+    position: absolute;  
+    top:6%;
+    left: 6%; 
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(431c40401e148f94dd396bdb06fb19ff.png);  
+    background-size:cover;
+    border-radius: 50%;
+    
+} 
+
+.circle 
+{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top: 46%; 
+    left:48%; 
+    border-radius: 50%;
+    background-color: white; 
+    z-index: 4;
+} 
+
+#hour 
+{
+    width: 5px; 
+    height:90px;
+    background-color: grey;
+    position:absolute;
+    top:22%;
+    left:50%;
+    border-radius: 50% 50% 0px 0px ;
+    transform-origin: bottom;
+    z-index: 1;
+
+} 
+
+#min
+{
+    width: 6px; 
+    height:110px;
+    background-color: palegoldenrod;
+    position:absolute;
+    top:19%;
+    left:50%;
+    border-radius: 50% 50% 0px 0px ;
+    transform-origin: bottom;
+    z-index:2;
+
+} 
+
+#sec
+{
+    width: 2px; 
+    height:120px;
+    background-color: red;
+    position:absolute;
+    top:15%;
+    left:50%;
+    border-radius: 50% 50% 0px 0px ;
+    transform-origin: bottom;
+    z-index: 3;
+
+}  
+
+
+.time
+{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-shadow: 4px 4px 6px grey; 
+}
+
+.time p:nth-child(1) 
+{
+    position: absolute;
+    left:44%;
+    top:-6%;
+} 
+
+.time p:nth-child(2) 
+{
+    position: absolute;
+    left:2%;
+    top:38%;
+}
+
+.time p:nth-child(3) 
+{
+    position: absolute;
+    left:94%;
+    top:39%;
+}
+
+.time p:nth-child(4) 
+{
+    position: absolute;
+    left:47%;
+    top:87%;
+}
